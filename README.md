@@ -81,7 +81,7 @@ Step 2: Install Dependencies
   pip install -r requirements.txt
 
 Step 3: Run the main script
-  python main.py
+  Enhanced-Sentiment-Analysis.py
 
 Step 4 (Optional): Run Jupyter notebook
   jupyter notebook notebooks/SentimentAnalysis_Stacking.ipynb
@@ -113,9 +113,8 @@ Install using:
 
   Name         : Govind Kalawate
   Degree       : B.Tech in CSE (Minor in Software Engineering)
-  Institution  : SRM Institute of Science and Technology, Chennai
+  Institution  : SRM Institute of Science and Technology, Chennai,India
   Email        : ga3211@srmist.edu.in
-  Location     : Shegaon, Maharashtra, India
 
 -------------------------------------------------------------------------------
 📃 LICENSE
