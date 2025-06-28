@@ -74,7 +74,7 @@ The models were evaluated using the following:
 🚀 HOW TO RUN THE PROJECT
 
 Step 1: Clone the repository
-  git clone https://github.com/yourusername/Enhanced-Sentiment-Analysis.git
+  git clone https://github.com/govindkalawate/Enhanced-Sentiment-Analysis.git
   cd Enhanced-Sentiment-Analysis
 
 Step 2: Install Dependencies
