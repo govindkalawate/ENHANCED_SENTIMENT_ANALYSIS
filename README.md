@@ -1,149 +1,136 @@
 
-```markdown
-# Enhanced Sentiment Analysis of Twitter (X) Data Using an Ensemble Stacking Model
+📌 ENHANCED SENTIMENT ANALYSIS OF TWITTER (X) DATA USING AN ENSEMBLE STACKING MODEL
 
-This project proposes an enhanced approach to sentiment analysis using an ensemble stacking model. The model leverages the combined strengths of multiple machine learning classifiers for improved sentiment classification on Twitter (X) data.
+This project proposes an enhanced approach to sentiment analysis using an ensemble stacking model.
+The model combines the strengths of multiple machine learning classifiers to achieve improved sentiment classification on Twitter (now X) data.
 
----
+-------------------------------------------------------------------------------
+🔍 ABSTRACT
 
-## 🔍 Abstract
-
-Sentiment analysis has become a critical task in understanding public opinion on platforms like Twitter (now X). This study develops an ensemble stacking model incorporating Random Forest, Logistic Regression, SVM, and XGBoost as base learners, with Logistic Regression as the meta-learner. The model is trained on a real-world tweet dataset, preprocessed using TF-IDF, and evaluated using accuracy, precision, recall, F1-score, and ROC-AUC.
-
----
-
-## 🧪 Models Used
-
-- **Base Learners**:
+Sentiment analysis is vital for understanding public opinion on social media.
+This study presents an ensemble stacking model with four base classifiers —
   - Random Forest
   - Logistic Regression
-  - Support Vector Machine (SVM)
+  - SVM
   - XGBoost
+and Logistic Regression as the meta-learner.
+The tweets are preprocessed using TF-IDF, and the model is evaluated using accuracy,
+precision, recall, F1-score, and ROC-AUC.
 
-- **Meta Learner**:
-  - Logistic Regression
+-------------------------------------------------------------------------------
+🧪 MODELS USED
 
----
+Base Learners:
+  ✔ Random Forest
+  ✔ Logistic Regression
+  ✔ Support Vector Machine (SVM)
+  ✔ XGBoost
 
-## 📝 Dataset
+Meta Learner:
+  ✔ Logistic Regression
 
-- **Total Tweets**: 1,584  
-- **Columns**:  
-  - `id`: Unique tweet ID  
-  - `label`: Sentiment label (0 = Negative, 1 = Positive)  
-  - `tweet`: The text content of the tweet  
+-------------------------------------------------------------------------------
+📝 DATASET DETAILS
 
-Data was collected using a keyword-based search strategy and includes diverse opinions on technology, services, and everyday experiences.
+- Total Tweets : 1,584
+- Columns      :
+    • id     - Unique tweet identifier
+    • label  - Sentiment (0 = Negative, 1 = Positive)
+    • tweet  - Raw tweet text
 
----
+Data was collected using a keyword-based search strategy and includes a wide range of topics
+including technology, services, and everyday experiences.
 
-## ⚙️ Preprocessing Steps
+-------------------------------------------------------------------------------
+⚙️ DATA PREPROCESSING STEPS
 
-- Removal of URLs, mentions (@user), hashtags (#tag), and emojis  
-- Lowercasing text and removing punctuation  
-- Tokenization and stopword filtering  
-- TF-IDF vectorization to convert text to numerical format  
+1. Remove URLs, mentions (@user), hashtags (#), emojis
+2. Convert text to lowercase
+3. Remove punctuation and extra whitespaces
+4. Tokenize and remove stopwords
+5. Apply TF-IDF vectorization to obtain numerical features
 
----
+-------------------------------------------------------------------------------
+📊 EVALUATION METRICS
 
-## 📊 Evaluation Metrics
+The models were evaluated using the following:
+  • Accuracy
+  • Precision
+  • Recall
+  • F1-Score
+  • ROC-AUC Score
 
-The following metrics were used to evaluate model performance:
+-------------------------------------------------------------------------------
+📈 PERFORMANCE COMPARISON
 
-- Accuracy  
-- Precision  
-- Recall  
-- F1-Score  
-- ROC-AUC Score  
+| MODEL              | ACCURACY | PRECISION | RECALL  | F1-SCORE | ROC-AUC |
+|--------------------|----------|-----------|---------|----------|---------|
+| SVM                | 87.71%   | 80.66     | 85.73   | 73.02    |   —     |
+| Random Forest      | 86.55%   | 81.67     | 85.67   | 78.10    |   —     |
+| Decision Tree      | 88.51%   | 79.62     | 84.88   | 55.57    |   —     |
+| Proposed Model     | 89.71%   | 82.40     | 79.16   | 80.75    | 86.41   |
 
----
+-------------------------------------------------------------------------------
+🚀 HOW TO RUN THE PROJECT
 
-## 📈 Results
+Step 1: Clone the repository
+  git clone https://github.com/yourusername/Enhanced-Sentiment-Analysis.git
+  cd Enhanced-Sentiment-Analysis
 
-| Model               | Accuracy  | Precision | Recall  | F1-Score | ROC-AUC |
-|--------------------|-----------|-----------|---------|----------|---------|
-| SVM                | 87.71%    | 80.66     | 85.73   | 73.02    | —       |
-| Random Forest      | 86.55%    | 81.67     | 85.67   | 78.10    | —       |
-| Decision Tree      | 88.51%    | 79.62     | 84.88   | 55.57    | —       |
-| **Proposed Model** | **89.71%**| **82.40** | **79.16** | **80.75** | **86.41** |
+Step 2: Install Dependencies
+  pip install -r requirements.txt
 
----
+Step 3: Run the main script
+  python main.py
 
-## 🚀 How to Run
+Step 4 (Optional): Run Jupyter notebook
+  jupyter notebook notebooks/SentimentAnalysis_Stacking.ipynb
 
-### 1. Clone the Repository
+-------------------------------------------------------------------------------
+📦 REQUIREMENTS
 
-```bash
-git clone https://github.com/yourusername/Enhanced-Sentiment-Analysis.git
-cd Enhanced-Sentiment-Analysis
-````
+  - Python 3.8 or higher
+  - pandas
+  - numpy
+  - scikit-learn
+  - xgboost
+  - matplotlib
+  - seaborn
 
-### 2. Install Dependencies
+Install using:
+  pip install -r requirements.txt
 
-```bash
-pip install -r requirements.txt
-```
+-------------------------------------------------------------------------------
+🔗 IEEE XPLORE PUBLICATION
 
-### 3. Run the Main Script
+  • Title     : Enhanced Sentiment Analysis of Twitter (X) Data Using an Ensemble Stacking Model
+  • Authors   : Govind Kalawate, Dr. M. Salomi, Yash Talreja
+  • Published : 07-May-2025
+  • DOI Link  : https://ieeexplore.ieee.org/document/10987415
 
-```bash
-python main.py
-```
+-------------------------------------------------------------------------------
+👨‍💻 AUTHOR INFO
 
-### 4. (Optional) Open Jupyter Notebook
+  Name         : Govind Kalawate
+  Degree       : B.Tech in CSE (Minor in Software Engineering)
+  Institution  : SRM Institute of Science and Technology, Chennai
+  Email        : ga3211@srmist.edu.in
+  Location     : Shegaon, Maharashtra, India
 
-```bash
-jupyter notebook notebooks/SentimentAnalysis_Stacking.ipynb
-```
+-------------------------------------------------------------------------------
+📃 LICENSE
 
----
+This project is licensed under the MIT License.
 
-## 📦 Requirements
+-------------------------------------------------------------------------------
+💡 STATEMENT OF PURPOSE
 
-Ensure the following packages are installed:
+We developed this model to combine the strengths and complement the weaknesses of individual classifiers.
+By using an ensemble approach and a robust preprocessing pipeline, the proposed model outperforms
+traditional single-model sentiment analysis techniques — offering better generalization and robustness
+on real-world Twitter (X) data.
 
-* Python 3.8 or higher
-* pandas
-* numpy
-* scikit-learn
-* xgboost
-* matplotlib
-* seaborn
+-------------------------------------------------------------------------------
 
-Install all at once using:
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 🔗 IEEE Xplore Info
-
-* **Project Title**: Enhanced Sentiment Analysis of Twitter (X) Data Using an Ensemble Stacking Model
-* **Authors**: Govind Kalawate Dr. M.Salomi, Yash Talreja.
-* **IEEE Xplore Link**: *\[https://ieeexplore.ieee.org/document/10987415]*
-
----
-
-## 👨‍💻 Author Info
-
-**Govind Kalawate**
-B.Tech in Computer Science & Engineering (Minor in Software Engineering)
-SRM Institute of Science and Technology, Chennai
-📧 [ga3211@srmist.edu.in](mailto:ga3211@srmist.edu.in)
-📍 Shegaon, Maharashtra, India
-
----
-
-## 📃 License
-
-This project is licensed under the MIT License. You are free to use, share, and modify it with attribution.
-
----
-
-## 💡 Statement of Purpose
-
-We designed this model to **combine the strengths and complement the weaknesses** of individual classifiers. By leveraging ensemble learning and a robust text preprocessing pipeline, we aim to offer better real-world sentiment classification performance than traditional single-model approaches.
 
 
